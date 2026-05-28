@@ -1,7 +1,8 @@
 import PageTransition from "../components/PageTransition";
 import BorderGlow from "../components/animations/GlowingBorder";
-import TiltedCard from "../components/animations/TiltedCard";
+import ProfileCard from "../components/ProfileCard";
 import { Link } from "react-router-dom";
+import Heropic from "../assets/Titlepic.jpeg"
 function LandingPage() {
   return (
     <PageTransition>
@@ -42,52 +43,47 @@ function LandingPage() {
 
             {/* Modern Interactive CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center z-20">
-              <BorderGlow>
-                <Link
-                  to="/projects"
-                  className="group relative inline-flex items-center justify-center bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold px-8 py-3.5 rounded-full shadow-lg shadow-indigo-500/10 dark:shadow-none hover:shadow-indigo-500/20 transition-all duration-300"
-                >
-                  View Projects
-                </Link>
-              </BorderGlow>
+              <Link
+                to="/projects"
+                className="group relative inline-flex items-center justify-center bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold px-8 py-3.5 rounded-full shadow-lg shadow-indigo-500/10 dark:shadow-none hover:shadow-indigo-500/20 transition-all duration-300"
+              >
+                View Projects
+              </Link>
 
-              <BorderGlow>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center text-white dark:text-slate-300 font-semibold px-8 py-3.5 rounded-full hover:bg-slate-100 hover:text-black dark:hover:bg-slate-900 dark:hover:text-white transition-all duration-300"
-                >
-                  Contact Me
-                </Link>
-              </BorderGlow>
+              <Link
+                to="/contact"
+                className="group relative inline-flex items-center justify-center bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold px-8 py-3.5 rounded-full shadow-lg shadow-indigo-500/10 dark:shadow-none hover:shadow-indigo-500/20 transition-all duration-300"
+              >
+                Contact Me
+              </Link>
             </div>
           </div>
 
           {/* RIGHT SIDE: Profile Card Provision (Occupies 5 columns on desktop) */}
           <div className="p-5 lg:col-span-5 flex justify-center items-center order-1 lg:order-2 w-full">
-            <div className="flex  items-center justify-center p-6 group">
+
+            <div className="flex p-2  items-center justify-center  group">
 
               {/* PLACEHOLDER: Replace this entire inner block with your actual <ProfileCard /> component */}
-              <TiltedCard
-                imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
-                altText="Anand V P"
-                captionText="Anand V P"
-                containerHeight="300px"
-                containerWidth="300px"
-                imageHeight="300px"
-                imageWidth="300px"
-                rotateAmplitude={30}
-                scaleOnHover={1.5}
-                showMobileWarning={false}
-                showTooltip={false}
-                displayOverlayContent
-                overlayContent={
-                  <p className=" text-white text-shadow-lg/90 shadow-xl/80   bg-gray-900/50 px-5 rounded-2xl dark:bg-white dark:text-gray-900/80 dark:text-shadow-lg/50  ">
-                    Anand V P
-                  </p>
+              <ProfileCard
+                name="Anand.V.P"
+                title="Software Engineer"
+                handle="javicodes"
+                status="Online"
+                contactText="Contact Me"
+                avatarUrl={Heropic}
+                showUserInfo={false}
+                enableTilt={true}
+                enableMobileTilt={true}
+                behindGlowColor="rgba(45, 27, 105, 0.75)"
+                iconUrl="/assets/demo/iconpattern.png"
+                behindGlowEnabled={true}
+                innerGradient="linear-gradient(145deg, rgba(22, 24, 45, 0.95) 0%, rgba(15, 35, 70, 0.82) 45%, rgba(45, 27, 105, 0.72) 100%)"
 
-                } />
 
+              />
             </div>
+
           </div>
 
         </div>
@@ -108,6 +104,10 @@ function LandingPage() {
         <div className="absolute bottom-24 right-12 md:right-24 text-3xl pointer-events-none animate-float [animation-delay:2.2s] opacity-60 dark:opacity-70">
           🚀
         </div>
+
+
+
+
       </section>
 
       {/* Required CSS Injection for the cute floating effect */}

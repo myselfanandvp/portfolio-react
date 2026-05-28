@@ -51,6 +51,7 @@ function SkillsPage() {
           {skillCategories.map((category, idx) => (
             <BorderGlow
               key={idx}
+              glowIntensity={80}
               className="flex flex-col h-full bg-transparent w-full"
               backgroundColor="bg-transparent"
             >

@@ -1,5 +1,6 @@
 import PageTransition from "../components/PageTransition";
 import BorderGlow from "../components/animations/GlowingBorder";
+import { Link } from "react-router-dom";
 
 function AboutPage() {
   return (
@@ -67,7 +68,7 @@ function AboutPage() {
           </div>
 
           {/* Right Side: Technical Snapshot Card */}
-          <BorderGlow className="p-2 md:col-span-2 hover:scale-[1.02] transition-transform duration-300">
+          <BorderGlow glowIntensity={50} glowRadius={50} className="p-2 md:col-span-2 hover:scale-[1.02] transition-transform duration-300">
             <div className="p-6 rounded-xl md:p-8 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
               <h3 className="text-xl font-bold mb-4 text-indigo-600 dark:text-indigo-400">Technical Snapshot</h3>
 
@@ -119,14 +120,13 @@ function AboutPage() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-12 z-20">
-          <a
-            href="/"
-            className="inline-flex items-center justify-center bg-slate-900 text-gray-100 dark:bg-white dark:text-slate-900 font-semibold px-8 py-3.5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300"
-          >
-            Back to Home
-          </a>
-        </div>
+
+        <Link
+          to="/"
+          className="inline-flex items-center justify-center bg-slate-900 text-gray-100 dark:bg-white dark:text-slate-900 font-semibold px-8 py-3.5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300"
+        >
+          Back to Home
+        </Link>
 
         {/* Floating Emojis matching the Landing Page system */}
         <div className="absolute top-24 right-8 md:right-16 text-4xl pointer-events-none animate-float opacity-70 dark:opacity-80">

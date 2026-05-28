@@ -482,14 +482,14 @@ const ProfileCardComponent = ({
               }}
             >
               <img
-                className="w-full absolute left-1/2 bottom-[-1px] backface-hidden will-change-transform transition-transform duration-[120ms] ease-out"
+                className="absolute inset-0 w-full h-full object-cover backface-hidden will-change-transform transition-transform duration-[120ms] ease-out"
                 src={avatarUrl}
                 alt={`${name || 'User'} avatar`}
                 loading="lazy"
                 style={{
-                  transformOrigin: '50% 100%',
+                  transformOrigin: '50% 50%',
                   transform:
-                    'translateX(calc(-50% + (var(--pointer-from-left) - 0.5) * 6px)) translateZ(0) scaleY(calc(1 + (var(--pointer-from-top) - 0.5) * 0.02)) scaleX(calc(1 + (var(--pointer-from-left) - 0.5) * 0.01))',
+                    'translateX(calc((var(--pointer-from-left) - 0.5) * 6px)) translateY(calc((var(--pointer-from-top) - 0.5) * 6px)) scale(1.03)',
                   borderRadius: cardRadius
                 }}
                 onError={e => {

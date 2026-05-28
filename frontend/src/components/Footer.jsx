@@ -1,18 +1,18 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: "GitHub", url: "https://github.com", icon: "💻" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "👔" },
-    { name: "Twitter", url: "https://twitter.com", icon: "🐦" },
-    { name: "Resume", url: "#", icon: "📄" },
+    { name: "GitHub", url: "https://github.com/myselfanandvp", icon: FaGithub },
+    {
+      name: "LinkedIn", url: "https://www.linkedin.com/in/myselfanandvp/", icon: FaLinkedin
+    },
+    { name: "Twitter", url: "https://x.com/meAnandvp", icon: FaTwitter },
   ];
 
   return (
-    <footer className="relative z-10 w-full border-t border-slate-200/60 dark:border-slate-800/50 bg-white/40 dark:bg-slate-950/40 backdrop-blur-md">
+    <footer className="relative z-10 w-full border-t border-slate-200/60 dark:border-slate-800/50 bg-transparent backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto px-6 py-12">
 
         {/* Top Section */}
@@ -59,20 +59,23 @@ function Footer() {
                 Connect
               </span>
               <div className="flex flex-col gap-2 text-sm font-medium text-slate-600 dark:text-slate-300">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group"
-                  >
-                    <span className="text-xs grayscale group-hover:grayscale-0 transition-all">
-                      {social.icon}
-                    </span>
-                    {social.name}
-                  </a>
-                ))}
+                {socialLinks.map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <a
+                      key={social.name}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group"
+                    >
+                      <span className="text-xs grayscale group-hover:grayscale-0 transition-all">
+                        <Icon />
+                      </span>
+                      {social.name}
+                    </a>
+                  )
+                })}
               </div>
             </div>
           </div>

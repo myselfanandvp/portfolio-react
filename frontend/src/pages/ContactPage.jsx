@@ -56,7 +56,7 @@ function ContactPage() {
           </div>
 
           {/* Glassmorphic Contact Form */}
-          <BorderGlow glowRadius={30} className="md:col-span-3 w-full rounded-3xl overflow-hidden shadow-xl">
+          <BorderGlow glowIntensity={80} className="md:col-span-3 w-full rounded-3xl overflow-hidden shadow-xl">
             <form className="bg-gray-100/100 dark:bg-slate-900/40 backdrop-blur-md  p-8 space-y-6 animate-in fade-in-0 slide-in-from-bottom-4 duration-500">
 
               {/* Name Input */}

@@ -1,28 +1,26 @@
 import SplashCursor from "./animations/SplashCursor";
 function AppBackground({ children }) {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-slate-50 text-slate-900 transition-colors duration-500 dark:bg-slate-950 dark:text-slate-50">
+    <div className="relative min-h-screen overflow-x-hidden bg-gray-100 text-slate-900 transition-colors duration-500 dark:bg-slate-950 dark:text-slate-50">
 
       {/* Background Effect Layer */}
 
 
 
       {/* Content Layer */}
-      <div className="relative z-50">
-        <SplashCursor DENSITY_DISSIPATION={9}
-          VELOCITY_DISSIPATION={1.5}
-          PRESSURE={0.05}
-          CURL={3}
-          SPLAT_RADIUS={0.08}
-          SPLAT_FORCE={9000}
-          COLOR_UPDATE_SPEED={22}
-          SHADING
-          RAINBOW_MODE={false}
-          COLOR="#e25822" />
-        {children}
-      </div>
+      <SplashCursor DENSITY_DISSIPATION={9}
+        VELOCITY_DISSIPATION={1.5}
+        PRESSURE={0.05}
+        CURL={3}
+        SPLAT_RADIUS={0.08}
+        SPLAT_FORCE={9000}
+        COLOR_UPDATE_SPEED={22}
+        SHADING
+        RAINBOW_MODE={false}
+        COLOR="#e25822" />
 
 
+      {children}
 
       <style>{`
         @keyframes float {
