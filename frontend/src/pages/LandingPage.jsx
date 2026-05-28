@@ -104,10 +104,6 @@ function LandingPage() {
         <div className="absolute bottom-24 right-12 md:right-24 text-3xl pointer-events-none animate-float [animation-delay:2.2s] opacity-60 dark:opacity-70">
           🚀
         </div>
-
-
-
-
       </section>
 
       {/* Required CSS Injection for the cute floating effect */}
