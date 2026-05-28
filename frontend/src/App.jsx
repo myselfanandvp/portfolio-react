@@ -7,7 +7,6 @@ import SkillsPage from "./pages/SkillsPage";
 import AppBackground from "./components/AppBackground";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-
 function App() {
   return (
     <AppBackground>
