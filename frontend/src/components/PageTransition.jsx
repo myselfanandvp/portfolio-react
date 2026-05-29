@@ -10,7 +10,7 @@ function PageTransition({ children }) {
     >
       {/* Background shadow overlay */}
       <motion.div
-        className="fixed inset-0 z-40 bg-black/10 pointer-events-none"
+        className="fixed inset-0  bg-black/10 pointer-events-none"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0 }}
         exit={{ opacity: 1 }}

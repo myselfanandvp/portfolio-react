@@ -31,7 +31,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl border-b border-white/10 bg-transparent transition-all duration-500">
+    <nav className="fixed top-0 left-0 w-full z-60 backdrop-blur-xl border-b border-white/10 bg-transparent transition-all duration-500">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* Logo */}

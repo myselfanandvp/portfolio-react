@@ -6,7 +6,6 @@ function AppBackground({ children }) {
       {/* Background Effect Layer */}
 
 
-
       {/* Content Layer */}
       <SplashCursor DENSITY_DISSIPATION={9}
         VELOCITY_DISSIPATION={1.5}
@@ -18,7 +17,6 @@ function AppBackground({ children }) {
         SHADING
         RAINBOW_MODE={false}
         COLOR="#e25822" />
-
 
       {children}
 

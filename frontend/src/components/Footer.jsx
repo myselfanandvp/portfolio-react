@@ -12,7 +12,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="relative z-50 w-full border-t border-slate-200/60 dark:border-slate-800/50 bg-transparent backdrop-blur-md z-50">
+    <footer className="z-50 relative w-full border-t border-slate-200/60 dark:border-slate-800/50 bg-transparent backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-6 py-12">
 
         {/* Top Section */}
