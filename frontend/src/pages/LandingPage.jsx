@@ -5,7 +5,7 @@ import ModelViewer from "../components/animations/ModelViewer";
 function LandingPage() {
   return (
     <PageTransition>
-      <section className="relative overflow-hidden min-h-screen flex items-center justify-center px-6 py-16 lg:py-0 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+      <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-24 max-w-8xl mx-auto">
 
         {/* Main Container */}
         <div className="w-full max-w-7xl mx-auto z-10">

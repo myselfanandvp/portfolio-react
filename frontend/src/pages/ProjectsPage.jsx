@@ -72,7 +72,7 @@ function ProjectsPage() {
   return (
     <PageTransition>
       {/* Main Page Layout Wrapper */}
-      <section className="relative z-10 flex flex-col items-center min-h-[calc(100vh-80px)] px-4 sm:px-6 py-16 md:py-24 max-w-6xl mx-auto w-full overflow-hidden">
+      <section className="relative z-10 flex flex-col items-center min-h-[calc(100vh-80px)] px-4 sm:px-6 py-16 md:py-24 max-w-8xl mx-auto w-full overflow-hidden">
 
         {/* Header content grouped to preserve vertical flow */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12 md:mb-16">

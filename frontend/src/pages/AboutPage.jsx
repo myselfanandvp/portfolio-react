@@ -7,7 +7,7 @@ function AboutPage() {
     <PageTransition>
 
       {/* Main Content Container */}
-      <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-24 max-w-5xl mx-auto">
+      <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-24 max-w-8xl mx-auto">
 
         {/* Cute Animated Badge */}
         <div className="mb-6 animate-bounce [animation-duration:3s]">
