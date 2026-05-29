@@ -1,9 +1,8 @@
 import PageTransition from "../components/PageTransition";
-import BorderGlow from "../components/animations/GlowingBorder";
-import ProfileCard from "../components/ProfileCard";
 import { Link } from "react-router-dom";
-import Heropic from "../assets/Titlepic.jpeg"
+import ModelViewer from "../components/animations/ModelViewer";
 function LandingPage() {
+
   return (
     <PageTransition>
 
@@ -65,24 +64,27 @@ function LandingPage() {
             <div className="flex p-2  items-center justify-center  group">
 
               {/* PLACEHOLDER: Replace this entire inner block with your actual <ProfileCard /> component */}
-              <ProfileCard
-                name="Anand.V.P"
-                title="Software Engineer"
-                handle="javicodes"
-                status="Online"
-                contactText="Contact Me"
-                avatarUrl={Heropic}
-                showUserInfo={false}
-                enableTilt={true}
-                enableMobileTilt={true}
-                behindGlowColor="rgba(45, 27, 105, 0.75)"
-                iconUrl="/assets/demo/iconpattern.png"
-                behindGlowEnabled={true}
-                innerGradient="linear-gradient(145deg, rgba(22, 24, 45, 0.95) 0%, rgba(15, 35, 70, 0.82) 45%, rgba(45, 27, 105, 0.72) 100%)"
+              {/* <ProfileCard */}
+              {/*   name="Anand.V.P" */}
+              {/*   title="Software Engineer" */}
+              {/*   handle="javicodes" */}
+              {/*   status="Online" */}
+              {/*   contactText="Contact Me" */}
+              {/*   avatarUrl={Heropic} */}
+              {/*   showUserInfo={false} */}
+              {/*   enableTilt={true} */}
+              {/*   enableMobileTilt={false} */}
+              {/*   behindGlowColor="rgba(45, 27, 105, 0.75)" */}
+              {/*   iconUrl="/assets/demo/iconpattern.png" */}
+              {/*   behindGlowEnabled={true} */}
+              {/*   innerGradient="linear-gradient(145deg, rgba(22, 24, 45, 0.95) 0%, rgba(15, 35, 70, 0.82) 45%, rgba(45, 27, 105, 0.72) 100%)" */}
+              {/**/}
+              {/**/}
+              {/* /> */}
 
-
-              />
             </div>
+
+
 
           </div>
 

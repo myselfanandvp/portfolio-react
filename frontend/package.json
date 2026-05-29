@@ -9,17 +9,21 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "predeploy":"bun run build"
-},
-"dependencies": {
-  "@gsap/react": "^2.1.2",
-  "@reduxjs/toolkit": "^2.12.0",
-  "@tailwindcss/vite": "^4.3.0",
-  "framer-motion": "^12.40.0",
-  "gh-pages": "^6.3.0",
+    "predeploy": "bun run build"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@reduxjs/toolkit": "^2.12.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "framer-motion": "^12.40.0",
+    "frontend": ".",
+    "gh-pages": "^6.3.0",
     "gl-matrix": "^3.4.4",
     "gsap": "^3.15.0",
     "motion": "^12.40.0",
+    "ogl": "^1.0.11",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-icons": "^5.6.0",
@@ -27,7 +31,8 @@
     "react-router-dom": "^7.15.1",
     "redux": "^5.0.1",
     "redux-react": "^2.0.0",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.0",
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
