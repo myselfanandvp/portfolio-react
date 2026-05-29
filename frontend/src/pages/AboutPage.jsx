@@ -123,7 +123,7 @@ function AboutPage() {
 
         <Link
           to="/"
-          className="inline-flex items-center justify-center bg-slate-900 text-gray-100 dark:bg-white dark:text-slate-900 font-semibold px-8 py-3.5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300"
+          className="mt-8 inline-flex items-center justify-center bg-slate-900 text-gray-100 dark:bg-white dark:text-slate-900 font-semibold px-8 py-3.5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 md:mt-5"
         >
           Back to Home
         </Link>
