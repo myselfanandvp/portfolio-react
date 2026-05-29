@@ -7,15 +7,15 @@ import Olx from "../assets/Olx.png"
 import Wavelift from "../assets/Wavelift.png"
 import Website from "../assets/OfficalWebsite.png"
 function ProjectsPage() {
-
   const items = [
     {
       image: Wavelift,
-      title: "WaveLift Legal Claims Platform",
-      subtitle: "Full-stack enterprise legal & insurance workflow system built with Django",
+      title: "WaveLift Audio E-Commerce Platform",
+      subtitle: "A premium, full-stack headphone buying marketplace featuring dynamic filtering and a seamless checkout experience.",
       handle: "@wavelift",
-      borderColor: "#e176c8",
-      gradient: "linear-gradient(145deg, #e176c8, #792CA2)",
+      // Vibrant Neon Fuchsia to Amethyst Violet
+      borderColor: "#ec4899",
+      gradient: "linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)",
       url: "https://www.wavelift.dpdns.org/",
     },
     {
@@ -23,8 +23,9 @@ function ProjectsPage() {
       title: "Manjaro Landing Page Clone",
       subtitle: "Fully responsive modern UI clone developed using HTML & Tailwind CSS",
       handle: "@manjaroclone",
-      borderColor: "#5798b4",
-      gradient: "linear-gradient(210deg, #5798b4, #4d585f)",
+      // Deep Emerald Teal to Ocean Blue
+      borderColor: "#0ea5e9",
+      gradient: "linear-gradient(135deg, #059669 0%, #0ea5e9 100%)",
       url: "https://myselfanandvp.github.io/Manjaro_org_clone/",
     },
     {
@@ -32,8 +33,9 @@ function ProjectsPage() {
       title: "Brilworx Corporate Website",
       subtitle: "Responsive business website crafted using HTML and Tailwind CSS",
       handle: "@brilworx",
-      borderColor: "#fde17d",
-      gradient: "linear-gradient(165deg, #fde17d, #70d2c1)",
+      // Sunset Coral to Radiant Amber
+      borderColor: "#f43f5e",
+      gradient: "linear-gradient(135deg, #f43f5e 0%, #f59e0b 100%)",
       url: "https://myselfanandvp.github.io/-Brilworx/",
     },
     {
@@ -41,8 +43,9 @@ function ProjectsPage() {
       title: "Netflix UI Clone",
       subtitle: "Interactive streaming platform clone powered by React.js and Firebase",
       handle: "@netflixclone",
-      borderColor: "#D51C39",
-      gradient: "linear-gradient(145deg, #D51C39, #e13d46)",
+      // Crimson Ruby Red to Deep Wine
+      borderColor: "#ef4444",
+      gradient: "linear-gradient(135deg, #dc2626 0%, #4c0519 100%)",
       url: "https://github.com/myselfanandvp/Netflix-clone",
     },
     {
@@ -50,18 +53,19 @@ function ProjectsPage() {
       title: "OLX Marketplace Clone",
       subtitle: "Responsive marketplace application using React.js and Firebase backend",
       handle: "@olxclone",
-      borderColor: "#6791f0",
-      gradient: "linear-gradient(145deg, #6791f0, #4BB8FA)",
+      // Electric Cyan to Royal Indigo Blue
+      borderColor: "#3b82f6",
+      gradient: "linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)",
       url: "https://github.com/myselfanandvp/olx-clone",
     },
     {
       image: Website,
       title: "My Official Website",
-      subtitle:
-        "Personal portfolio website hosted on GitHub Pages, showcasing my projects, skills, tech stack, and contact information with a clean responsive design.",
+      subtitle: "Personal portfolio website hosted on GitHub Pages, showcasing my projects, skills, tech stack, and contact information with a clean responsive design.",
       handle: "@OfficialWebsite",
-      borderColor: "#9252ff",
-      gradient: "linear-gradient(145deg, #9252ff,#050505)",
+      // Neon Purple to Deep Cosmic Indigo
+      borderColor: "#a855f7",
+      gradient: "linear-gradient(135deg, #a855f7 0%, #312e81 100%)",
       url: "https://myselfanandvp.github.io/officialwebsite/",
     },
   ];

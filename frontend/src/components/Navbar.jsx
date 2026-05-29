@@ -57,8 +57,8 @@ function Navbar() {
                 <Link
                   to={link.href}
                   className={`relative px-1 py-2 transition-colors duration-200 ${isActive
-                      ? "text-indigo-600 dark:text-indigo-400"
-                      : "hover:text-indigo-500 dark:hover:text-indigo-400"
+                    ? "text-indigo-600 dark:text-indigo-400"
+                    : "hover:text-indigo-500 dark:hover:text-indigo-400"
                     }`}
                 >
                   {link.name}
@@ -100,8 +100,8 @@ function Navbar() {
               {/* Sun Icon */}
               <svg
                 className={`absolute w-5 h-5 transition-all duration-500 transform ease-out ${darkMode
-                    ? "scale-0 rotate-90 opacity-0"
-                    : "scale-100 rotate-0 opacity-100 group-hover:rotate-45"
+                  ? "scale-0 rotate-90 opacity-0"
+                  : "scale-100 rotate-0 opacity-100 group-hover:rotate-45"
                   }`}
                 fill="none"
                 viewBox="0 0 24 24"
@@ -118,8 +118,8 @@ function Navbar() {
               {/* Moon Icon */}
               <svg
                 className={`absolute w-5 h-5 text-indigo-400 transition-all duration-500 transform ease-out ${darkMode
-                    ? "scale-100 rotate-0 opacity-100 group-hover:-rotate-12"
-                    : "scale-0 -rotate-90 opacity-0"
+                  ? "scale-100 rotate-0 opacity-100 group-hover:-rotate-12"
+                  : "scale-0 -rotate-90 opacity-0"
                   }`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -177,8 +177,8 @@ function Navbar() {
       {/* Mobile Dropdown */}
       <div
         className={`md:hidden border-b border-white/10 bg-transparent backdrop-blur-xl transition-all duration-300 ease-in-out ${open
-            ? "max-h-screen opacity-100 visible"
-            : "max-h-0 opacity-0 invisible overflow-hidden"
+          ? "max-h-screen opacity-100 visible"
+          : "max-h-0 opacity-0 invisible overflow-hidden"
           }`}
       >
         <ul className="px-6 py-5 space-y-4 text-base font-bold text-slate-700 dark:text-slate-300">
@@ -191,8 +191,8 @@ function Navbar() {
                   to={link.href}
                   onClick={() => setOpen(false)}
                   className={`block py-1 transition-colors ${isActive
-                      ? "text-indigo-600 dark:text-indigo-400"
-                      : ""
+                    ? "text-indigo-600 dark:text-indigo-400"
+                    : ""
                     }`}
                 >
                   {link.name}
